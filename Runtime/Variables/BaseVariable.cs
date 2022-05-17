@@ -1,9 +1,9 @@
 ﻿using System.Runtime.CompilerServices;
-using Gameframe.ScriptableObjects.BindingSupport;
-using Gameframe.ScriptableObjects.Events;
 using UnityEngine;
+using UnityScriptableObjects.Runtime.BindingSupport;
+using UnityScriptableObjects.Runtime.Events;
 
-namespace Gameframe.ScriptableObjects.Variables
+namespace UnityScriptableObjects.Runtime.Variables
 {
     public class BaseVariable : BindableScriptableObject
     {
@@ -24,7 +24,8 @@ namespace Gameframe.ScriptableObjects.Variables
 
         public void OnValidate()
         {
-            OnValueChanged.Raise();
+            if (onValueChanged != null)
+                onValueChanged.Raise();
         }
         
         /// <summary>

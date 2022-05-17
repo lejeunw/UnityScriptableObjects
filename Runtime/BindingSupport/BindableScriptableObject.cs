@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-namespace Gameframe.ScriptableObjects.BindingSupport
+namespace UnityScriptableObjects.Runtime.BindingSupport
 {
     public class BindableScriptableObject : ScriptableObject, INotifyPropertyChanged
     {

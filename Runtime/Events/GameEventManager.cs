@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Gameframe.ScriptableObjects.Events
+namespace UnityScriptableObjects.Runtime.Events
 {
     [CreateAssetMenu(menuName = MenuNames.EventMenu+"EventManager")]
     public class GameEventManager : ScriptableObject

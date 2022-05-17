@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEditor;
 using UnityEngine;
-using UnityEditor;
+using UnityScriptableObjects.Runtime.Events;
 
-namespace Gameframe.ScriptableObjects.Events
+namespace UnityScriptableObjects.Editor.Events
 {
   [CustomEditor(typeof(GameEvent))]
   public class GameEventEditor : UnityEditor.Editor

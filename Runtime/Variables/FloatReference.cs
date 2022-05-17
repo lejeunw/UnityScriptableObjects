@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Gameframe.ScriptableObjects.Variables
+﻿namespace UnityScriptableObjects.Runtime.Variables
 {
   [System.Serializable]
   public class FloatReference : VariableReference<float,FloatVariable>

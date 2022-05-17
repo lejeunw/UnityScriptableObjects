@@ -1,9 +1,8 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 
-namespace Gameframe.ScriptableObjects.Variables
+namespace UnityScriptableObjects.Runtime.Variables
 {
-  using System;
-
   public enum AssetReferenceType : int
   {
     Direct = 0, //Maintain reference via Unity GUID

@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Gameframe.ScriptableObjects.Events
+namespace UnityScriptableObjects.Runtime.Events
 {
 
   public class StringGameEventListener : BaseGameEventListener<string>

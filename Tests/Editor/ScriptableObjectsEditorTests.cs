@@ -1,10 +1,8 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using NUnit.Framework;
-using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Gameframe.ScriptableObjects.Tests.Editor
+namespace UnityScriptableObjects.Tests.Editor
 {
     public class ScriptableObjectsEditorTests
     {

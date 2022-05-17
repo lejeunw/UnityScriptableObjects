@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Gameframe.ScriptableObjects.Variables
+namespace UnityScriptableObjects.Runtime.Variables
 {
   [CreateAssetMenu(menuName = MenuNames.Variables+"Int")]
   public class IntVariable : BaseVariable, IVariable<int>

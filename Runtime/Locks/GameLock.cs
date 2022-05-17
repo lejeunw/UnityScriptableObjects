@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
-using Gameframe.ScriptableObjects.Events;
 using UnityEngine;
+using UnityScriptableObjects.Runtime.Events;
 
-namespace Gameframe.ScriptableObjects.Locks
+namespace UnityScriptableObjects.Runtime.Locks
 {
     
     /// <summary>

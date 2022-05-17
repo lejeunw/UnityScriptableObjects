@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Gameframe.ScriptableObjects.RuntimeSets
+namespace UnityScriptableObjects.Runtime.RuntimeSets
 {
   public class RuntimeTable<TKey, TValue> : ScriptableObject
   {

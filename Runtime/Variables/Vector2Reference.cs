@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Gameframe.ScriptableObjects.Variables
+namespace UnityScriptableObjects.Runtime.Variables
 {
   [System.Serializable]
   public class Vector2Reference : VariableReference<Vector2,Vector2Variable>

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Gameframe.ScriptableObjects.Variables
+namespace UnityScriptableObjects.Runtime.Variables
 {
   [CreateAssetMenu(menuName = MenuNames.Variables+"Vector2")]
   public class Vector2Variable : BaseVariable, IVariable<Vector2>

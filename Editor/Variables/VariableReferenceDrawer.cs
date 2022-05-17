@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEditor;
 using UnityEngine;
-using UnityEditor;
+using UnityScriptableObjects.Runtime.Variables;
 
-namespace Gameframe.ScriptableObjects.Variables
+namespace UnityScriptableObjects.Editor.Variables
 {
 
   [CustomPropertyDrawer(typeof(FloatReference))]

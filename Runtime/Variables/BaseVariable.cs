@@ -22,6 +22,11 @@ namespace Gameframe.ScriptableObjects.Variables
             }
         }
 
+        public void OnValidate()
+        {
+            OnValueChanged.Raise();
+        }
+        
         /// <summary>
         /// INotifyPropertyChanged interface implemented to support Gameframe.Bindings
         /// </summary>

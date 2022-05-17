@@ -7,6 +7,8 @@ namespace Gameframe.ScriptableObjects.BindingSupport
 {
     public class BindableScriptableObject : ScriptableObject, INotifyPropertyChanged
     {
+        [SerializeField]
+        private bool broadcastOnValueChanged;
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -29,8 +31,14 @@ namespace Gameframe.ScriptableObjects.BindingSupport
                 return false;
             }
             field = value;
-            OnPropertyChanged(propertyName);
+            if (broadcastOnValueChanged)
+                OnPropertyChanged(propertyName);
             return true;
+        }
+        
+        private void Reset()
+        {
+            broadcastOnValueChanged = true;
         }
     }
 }

@@ -1,0 +1,7 @@
+{
+  "name": "com.gameframe.scriptableobjects.Utils",
+  "references": [
+    "com.gameframe.scriptableobjects",
+    "Unity.TextMeshPro"
+  ]
+}

@@ -5,6 +5,7 @@ using Gameframe.ScriptableObjects.Events;
 using Gameframe.ScriptableObjects.Variables;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityScriptableObjects.Runtime.Variables;
 
 namespace UnityScriptableObjects.Utils
 {

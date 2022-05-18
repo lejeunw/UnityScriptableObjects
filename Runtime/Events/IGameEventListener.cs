@@ -1,4 +1,4 @@
-﻿namespace Gameframe.ScriptableObjects.Events
+﻿namespace UnityScriptableObjects.Runtime.Events
 {
   public interface IGameEventListener
   {

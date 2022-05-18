@@ -1,7 +1,6 @@
-﻿using Gameframe.ScriptableObjects.Events;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Gameframe.ScriptableObjects.Variables
+namespace UnityScriptableObjects.Runtime.Variables
 {
   [CreateAssetMenu(menuName=MenuNames.Variables+"Color")]
   public class ColorVariable : BaseVariable, IVariable<Color>

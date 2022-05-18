@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityScriptableObjects.Runtime.Events;
 
 namespace Gameframe.ScriptableObjects.Events
 {

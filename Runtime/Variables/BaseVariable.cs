@@ -1,10 +1,8 @@
-﻿using System;
-using System.Runtime.CompilerServices;
-using Gameframe.ScriptableObjects.BindingSupport;
-using Gameframe.ScriptableObjects.Events;
-using UnityEngine;
+﻿using System.Runtime.CompilerServices;
+using UnityScriptableObjects.Runtime.BindingSupport;
+using UnityScriptableObjects.Runtime.Events;
 
-namespace Gameframe.ScriptableObjects.Variables
+namespace UnityScriptableObjects.Runtime.Variables
 {
     public abstract class BaseVariable : BindableScriptableObject
     {

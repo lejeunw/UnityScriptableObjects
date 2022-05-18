@@ -1,6 +1,4 @@
-﻿using UnityEditor;
-
-namespace Gameframe.ScriptableObjects
+﻿namespace UnityScriptableObjects.Runtime
 {
     public static class MenuNames
     {

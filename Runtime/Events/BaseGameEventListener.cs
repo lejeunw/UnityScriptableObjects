@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
+﻿using UnityEngine;
 
-namespace Gameframe.ScriptableObjects.Events
+namespace UnityScriptableObjects.Runtime.Events
 {
   public abstract class BaseGameEventListener<T> : MonoBehaviour, IGameEventListener
   {

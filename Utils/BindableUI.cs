@@ -1,6 +1,8 @@
 using Gameframe.ScriptableObjects.Events;
 using Gameframe.ScriptableObjects.Variables;
 using UnityEngine;
+using UnityScriptableObjects.Runtime.Events;
+using UnityScriptableObjects.Runtime.Variables;
 
 namespace UnityScriptableObjects.Utils
 {

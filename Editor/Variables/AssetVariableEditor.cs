@@ -1,5 +1,6 @@
 ﻿using UnityEditor;
 using UnityEngine;
+using UnityScriptableObjects.Runtime.Variables;
 
 namespace Gameframe.ScriptableObjects.Variables
 {

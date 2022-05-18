@@ -1,8 +1,6 @@
-using Gameframe.ScriptableObjects;
-using Gameframe.ScriptableObjects.Variables;
 using UnityEngine;
 
-namespace ScriptableObjects.GameFrame.Runtime.Variables
+namespace UnityScriptableObjects.Runtime.Variables
 {
     [CreateAssetMenu(menuName = MenuNames.Variables + "Bool")]
     public class BoolVariable : BaseVariable, IVariable<bool>

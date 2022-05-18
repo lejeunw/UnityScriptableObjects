@@ -1,7 +1,10 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using Gameframe.ScriptableObjects.Variables;
+using UnityEngine;
 using UnityEngine.Events;
 
-namespace UnityScriptableObjects.Runtime.Events
+namespace Gameframe.ScriptableObjects.Events
 {
   public class GameEventListener : MonoBehaviour, IGameEventListener
   {
@@ -18,7 +21,7 @@ namespace UnityScriptableObjects.Runtime.Events
       gameEvent.RemoveListener(this);
     }
 
-    public void OnEventRaised(GameEvent gameEvent)
+    public void OnEventRaised(GameEvent gameEventParam)
     {
       action.Invoke();
     }

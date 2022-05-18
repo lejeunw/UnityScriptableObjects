@@ -1,4 +1,8 @@
-﻿namespace UnityScriptableObjects.Runtime.Events
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Gameframe.ScriptableObjects.Events
 {
   public abstract class BaseGameEvent<T> : GameEvent
   {

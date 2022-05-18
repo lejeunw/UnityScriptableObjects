@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UnityScriptableObjects.Runtime.RuntimeSets
+namespace Gameframe.ScriptableObjects.RuntimeSets
 {
   public class RuntimeSetInstance : MonoBehaviour
   {

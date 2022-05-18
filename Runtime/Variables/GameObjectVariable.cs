@@ -1,6 +1,8 @@
-﻿using UnityEngine;
+﻿using Gameframe.ScriptableObjects.Events;
+using UnityEngine;
+using UnityEngine.Events;
 
-namespace UnityScriptableObjects.Runtime.Variables
+namespace Gameframe.ScriptableObjects.Variables
 {
   [CreateAssetMenu(menuName=MenuNames.Variables+"GameObject")]
   public class GameObjectVariable : BaseVariable, IVariable<GameObject>
@@ -31,6 +33,10 @@ namespace UnityScriptableObjects.Runtime.Variables
         Value = null;
       }
     }
-    
+
+    public override string ToText()
+    {
+      return gameObject.ToString();
+    }
   }
 }

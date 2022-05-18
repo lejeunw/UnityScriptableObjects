@@ -1,11 +1,10 @@
 ﻿using UnityEditor;
 using UnityEngine;
-using UnityScriptableObjects.Runtime.Variables;
 
-namespace UnityScriptableObjects.Editor.Variables
+namespace Gameframe.ScriptableObjects.Variables
 {
   [CustomEditor( typeof( AssetVariable ) )]
-  public class AssetVariableEditor : UnityEditor.Editor
+  public class AssetVariableEditor : Editor
   {
     SerializedProperty assetName;
     SerializedProperty assetPath;

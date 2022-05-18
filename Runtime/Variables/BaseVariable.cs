@@ -1,13 +1,13 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System;
+using System.Runtime.CompilerServices;
+using Gameframe.ScriptableObjects.BindingSupport;
+using Gameframe.ScriptableObjects.Events;
 using UnityEngine;
-using UnityScriptableObjects.Runtime.BindingSupport;
-using UnityScriptableObjects.Runtime.Events;
 
-namespace UnityScriptableObjects.Runtime.Variables
+namespace Gameframe.ScriptableObjects.Variables
 {
-    public class BaseVariable : BindableScriptableObject
+    public abstract class BaseVariable : BindableScriptableObject
     {
-        [SerializeField]
         protected GameEvent onValueChanged;
 
         public GameEvent OnValueChanged
@@ -22,12 +22,13 @@ namespace UnityScriptableObjects.Runtime.Variables
             }
         }
 
+        public abstract string ToText();
+
         public void OnValidate()
         {
-            if (onValueChanged != null)
-                onValueChanged.Raise();
+            OnValueChanged.Raise();
         }
-        
+
         /// <summary>
         /// INotifyPropertyChanged interface implemented to support Gameframe.Bindings
         /// </summary>

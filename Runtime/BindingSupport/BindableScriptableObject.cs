@@ -3,12 +3,13 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-namespace UnityScriptableObjects.Runtime.BindingSupport
+namespace Gameframe.ScriptableObjects.BindingSupport
 {
     public class BindableScriptableObject : ScriptableObject, INotifyPropertyChanged
     {
         [SerializeField]
         private bool broadcastOnValueChanged;
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -38,7 +39,7 @@ namespace UnityScriptableObjects.Runtime.BindingSupport
         
         private void Reset()
         {
-            broadcastOnValueChanged = true;
+            broadcastOnValueChanged = true; 
         }
     }
 }

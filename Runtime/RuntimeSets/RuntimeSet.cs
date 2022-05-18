@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace UnityScriptableObjects.Runtime.RuntimeSets
+namespace Gameframe.ScriptableObjects.RuntimeSets
 {
   public class RuntimeSet<T> : ScriptableObject
   {

@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace UnityScriptableObjects.Runtime.Events
+namespace Gameframe.ScriptableObjects.Events
 {
 
   public class StringGameEventListener : BaseGameEventListener<string>
@@ -22,7 +24,7 @@ namespace UnityScriptableObjects.Runtime.Events
       get { return stringGameEvent; }
     }
 
-    public override void OnEventRaised(GameEvent gameEvent)
+    public override void OnEventRaised(GameEvent gameEventParam)
     {
       onEventRaised.Invoke(stringGameEvent.Value);
     }

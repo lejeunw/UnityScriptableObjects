@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UnityScriptableObjects.Runtime.Variables
+namespace Gameframe.ScriptableObjects.Variables
 {
   [CreateAssetMenu(menuName=MenuNames.Variables+"Vector3")]
   public class Vector3Variable : BaseVariable, IVariable<Vector3>
@@ -11,6 +11,11 @@ namespace UnityScriptableObjects.Runtime.Variables
     {
       get => value;
       set => SetProperty(ref this.value, value);
+    }
+
+    public override string ToText()
+    {
+      return Value.ToString();
     }
   }
 }

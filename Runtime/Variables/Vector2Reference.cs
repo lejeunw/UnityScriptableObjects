@@ -1,10 +1,15 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-namespace UnityScriptableObjects.Runtime.Variables
+namespace Gameframe.ScriptableObjects.Variables
 {
-  [System.Serializable]
-  public class Vector2Reference : VariableReference<Vector2,Vector2Variable>
-  {
-
-  }
+    [System.Serializable]
+    public class Vector2Reference : VariableReference<Vector2, Vector2Variable>
+    {
+        public static implicit operator Vector2(Vector2Reference reference)
+        {
+            return reference.Value;
+        }
+    }
 }

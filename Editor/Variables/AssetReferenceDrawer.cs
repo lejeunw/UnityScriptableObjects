@@ -1,8 +1,9 @@
-﻿using UnityEditor;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityScriptableObjects.Runtime.Variables;
+using UnityEditor;
 
-namespace UnityScriptableObjects.Editor.Variables
+namespace Gameframe.ScriptableObjects.Variables
 {
 
   [CustomPropertyDrawer(typeof(AssetReference))]

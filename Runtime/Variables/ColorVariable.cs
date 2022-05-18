@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Gameframe.ScriptableObjects.Events;
+using UnityEngine;
 
-namespace UnityScriptableObjects.Runtime.Variables
+namespace Gameframe.ScriptableObjects.Variables
 {
   [CreateAssetMenu(menuName=MenuNames.Variables+"Color")]
   public class ColorVariable : BaseVariable, IVariable<Color>
@@ -11,6 +12,11 @@ namespace UnityScriptableObjects.Runtime.Variables
     {
       get => value;
       set => SetProperty(ref this.value, value);
+    }
+
+    public override string ToText()
+    {
+      return Value.ToString();
     }
   }
 }

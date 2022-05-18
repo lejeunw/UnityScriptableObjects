@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using UnityEngine;
 
-namespace UnityScriptableObjects.Runtime.Variables
+namespace Gameframe.ScriptableObjects.Variables
 {
   [CreateAssetMenu(menuName=MenuNames.Variables+"Asset")]
   public class AssetVariable : ScriptableObject

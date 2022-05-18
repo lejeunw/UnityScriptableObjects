@@ -1,4 +1,8 @@
-﻿namespace UnityScriptableObjects.Runtime.Variables
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Gameframe.ScriptableObjects.Variables
 {
   public interface IVariable<T>
   {

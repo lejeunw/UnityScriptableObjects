@@ -15,6 +15,11 @@ namespace UnityScriptableObjects.Utils
         [SerializeField]
         private SliderDataType dataToSync;
 
+        private void Start()
+        {
+            ApplyChange();
+        }
+        
         private void Reset()
         {
             sliderComponent = GetComponent<Slider>();
@@ -30,6 +35,7 @@ namespace UnityScriptableObjects.Utils
                     break;
                 case SliderDataType.Max:
                     SyncMax();
+                    SyncValue();
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

@@ -8,7 +8,7 @@ namespace UnityScriptableObjects.Runtime.BindingSupport
     public class BindableScriptableObject : ScriptableObject, INotifyPropertyChanged
     {
         [SerializeField]
-        private bool broadcastOnValueChanged;
+        public bool broadcastOnValueChanged;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
